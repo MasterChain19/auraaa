@@ -27,7 +27,7 @@ body, .navbar a, .content, .box1, .box2, .box3, .box4, .moli, .aki, .abot, .q, .
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(214, 116, 24, 0.808);
+    background: rgb(226 232 232 / 20%);
     display: flex;
     justify-content: center;
     padding: 10px;
@@ -67,19 +67,19 @@ body, .navbar a, .content, .box1, .box2, .box3, .box4, .moli, .aki, .abot, .q, .
 
 /* Background images for each page */
 .page1 {
-    background-image: url('https://4.bp.blogspot.com/-F_zAkVsUUhg/U001yixdiXI/AAAAAAAAM24/0tajb4HKEoI/s1600/Keren03.jpg');
+    background-image: url('img/aurabg.webp');
 }
 
 .page2 {
-    background-image: url('https://2.bp.blogspot.com/-G9rBpn4o3YQ/VLzYQVjJFDI/AAAAAAAAADE/GA4UK8s0aRs/s1600/Desktop%2BBackground.bmp');
+    background-image: url('img/aurabg2.webp');
 }
 
 .page3 {
-    background-image: url('https://marketplace.canva.com/EAFB5f7WRAM/1/0/1600w/canva-gelap-minimalis-desktop-wallpaper-J8Y3QE-vV9I.jpg');
+    background-image: url('img/aurabg3.webp');
 }
 
 .page4 {
-    background-image: url('https://4.bp.blogspot.com/-pxI53JDe7E4/UxxwtvRuzqI/AAAAAAAACmc/oc3CGRgeRQY/s1600/Wallpaper+Pemandangan+Alam+super+keren+(12).jpg');
+    background-image: url('img/aurabg4.webp');
 }
 
 /* Content styling */
@@ -91,7 +91,7 @@ body, .navbar a, .content, .box1, .box2, .box3, .box4, .moli, .aki, .abot, .q, .
 
 /* Box styling */
 .box1, .box2, .box3, .box4 {
-    background: rgba(243, 176, 32, 0.7);
+    background: rgb(226 232 232 / 20%);
     display: inline-block;
     padding: 20px;
     border-radius: 8px;
@@ -171,7 +171,7 @@ body, .navbar a, .content, .box1, .box2, .box3, .box4, .moli, .aki, .abot, .q, .
 }
 
 .line span, .line1 span, .line2 span {
-    background: #333;
+    background: #0000007d;
     padding: 0 20px;
     color: #fff;
 }
