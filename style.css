@@ -1,0 +1,232 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* Apply the custom font to all text */
+body, .navbar a, .content, .box1, .box2, .box3, .box4, .moli, .aki, .abot, .q, .b, .line span, .line1 span, .line2 span {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 90%;
+    font-style: normal;
+    font-size: 110%;
+}
+
+
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(214, 116, 24, 0.808);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 90%;
+    font-style: normal;
+    font-size: 110%;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 90%;
+    font-style: normal;
+    font-size: 110%;
+}
+
+/* Styling for each page section */
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    text-align: center;
+    position: relative;
+}
+
+/* Background images for each page */
+.page1 {
+    background-image: url('https://4.bp.blogspot.com/-F_zAkVsUUhg/U001yixdiXI/AAAAAAAAM24/0tajb4HKEoI/s1600/Keren03.jpg');
+}
+
+.page2 {
+    background-image: url('https://2.bp.blogspot.com/-G9rBpn4o3YQ/VLzYQVjJFDI/AAAAAAAAADE/GA4UK8s0aRs/s1600/Desktop%2BBackground.bmp');
+}
+
+.page3 {
+    background-image: url('https://marketplace.canva.com/EAFB5f7WRAM/1/0/1600w/canva-gelap-minimalis-desktop-wallpaper-J8Y3QE-vV9I.jpg');
+}
+
+.page4 {
+    background-image: url('https://4.bp.blogspot.com/-pxI53JDe7E4/UxxwtvRuzqI/AAAAAAAACmc/oc3CGRgeRQY/s1600/Wallpaper+Pemandangan+Alam+super+keren+(12).jpg');
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+/* Box styling */
+.box1, .box2, .box3, .box4 {
+    background: rgba(243, 176, 32, 0.7);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 90%;
+    width: 400px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image styling inside boxes */
+.box1 img, .box3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for images */
+.box1 img:hover, .box3 img:hover {
+    transform: scale(1.1);
+}
+
+/* Text styling inside boxes */
+.moli, .aki, .abot, .q, .b {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Specific text styling */
+.q {
+    top: 40px;
+    font-size: 200%;
+}
+
+.moli {
+    top: 520px;
+    font-size: 100%;
+    color: #1fffec;
+}
+
+.aki {
+    top: 40px;
+    font-size: 300%;
+}
+
+.abot {
+    top: 200px;
+}
+
+.b {
+    top: 40px;
+    font-size: 100%;
+}
+
+/* Styling for lines with text */
+.line, .line1, .line2 {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line::before, .line::after, .line1::before, .line1::after, .line2::before, .line2::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #fff;
+    margin: 0 10px;
+}
+
+.line span, .line1 span, .line2 span {
+    background: #333;
+    padding: 0 20px;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .line, .line1, .line2 {
+        flex-direction: column;
+    }
+
+    .line::before, .line::after, .line1::before, .line1::after, .line2::before, .line2::after {
+        border-bottom: none;
+        border-left: 2px solid #fff;
+        margin: 10px 0;
+        height: 50px;
+        width: 2px;
+    }
+
+    .line span, .line1 span, .line2 span {
+        background: transparent;
+        padding: 5px 10px;
+    }
+}
+
+/* Container for side images */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Styling for side images */
+.side-img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for side images */
+.side-img:hover {
+    transform: scale(1.1);
+}
+
+#copy-button {
+    background-color: #8b0eff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 9px;
+    margin-top: 10px;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 90%;
+    font-style: normal;
+    font-size: 110%;
+}

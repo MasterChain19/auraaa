@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+                
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#page1">HOME</a>
+        <a href="#page2">ABOUT</a>
+        <a href="#page3">TEKONOMIC</a>
+        <a href="#page4">ROADMAP</a>
+    </nav>
+
+    <!-- Halaman 1 -->
+    <section id="page1" class="page page1">
+        <div class="content">
+            <img src="img/2.jpg" alt="Side Foto 1" class="side-img left reveal hidden">
+            <div class="box1">
+                <div class="box-title"></div>
+                <div class="moli">MAKO IS CAT</div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <p id="copy-text" class="fade-in">CA XXXXXXXXXXXXXXXXXXXX</p>
+                <button id="copy-button">Salin Teks</button>
+            </div>
+            <img src="img/3.jpg" alt="Side Foto 2" class="side-img right reveal hidden">
+            <div class="q"><q>MAKO</q></div>
+            <div class="line">
+                <span>
+                    <div class="social-media">
+                        <a href="#"><img src="https://www.freepnglogos.com/uploads/twitter-x-logo-png/twitter-x-logo-png-9.png" width="70px"></a>
+                        <a href="#"><img src="https://logodownload.org/wp-content/uploads/2017/11/telegram-logo-8.png" width="70px"></a>
+                        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/021/819/342/non_2x/fun-green-pill-free-png.png" width="70px"></a>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman 2 -->
+    <section id="page2" class="page page2">
+        <div class="content">
+            <img src="img/4.jpg" alt="Side Foto 3" class="side-img left reveal hidden">
+            <div class="box2">
+                <div class="box-title">Title for Box 2</div>
+                <div class="aki">About</div>
+                <div class="abot">isi about</div>
+            </div>
+            <img src="img/5.jpg" alt="Side Foto 4" class="side-img right reveal hidden">
+        </div>
+    </section>
+    <div class="line1">
+        <span>TOKENOMICS</span>
+    </div>
+    
+    <!-- Halaman 3 -->
+    <section id="page3" class="page page3">
+        <div class="container">
+            <img src="img/3.jpg" alt="Side Foto 5" class="side-img left reveal hidden">
+            <div class="box3">
+                <div class="box-title">Title for Box 3</div>
+                <div class="b">
+                    Token Name = $JUCE TICKER = $JUCE TOTAL SUPPLY = 1.000.000.0000 LIQUIDITY POOL BURNED = 100 % <br>
+                    TAXES = 0%
+                </div>
+            </div>
+            <img src="img/4.jpg" alt="Side Foto 6" class="side-img right reveal hidden">
+        </div>
+    </section>
+    <div class="line2">
+        <span>ROADMAP</span>
+    </div>
+    
+    <!-- Halaman 4 -->
+    <section id="page4" class="page page4">
+        <div class="content">
+            <img src="img/3.jpg" alt="Side Foto 7" class="side-img left reveal hidden">
+            <div class="box4">
+                <div class="box-title">Title for Box 4</div>
+                <p>1. Define Goals and Objectives</p>
+                <p>2. Identify Steps and Phases</p>
+                <p>3. Schedule Tasks and Phases</p>
+                <p>4. Allocate Resources</p>
+                <p>5. Choose Roadmap Format</p>
+            </div>
+            <img src="img/2.jpg" alt="Side Foto 8" class="side-img right reveal hidden">
+            <div class="line">
+                <span>copy @ by mako</span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const reveals = document.querySelectorAll('.reveal');
+
+            function checkReveal() {
+                const windowHeight = window.innerHeight;
+                const revealPoint = windowHeight * 0.8;
+
+                reveals.forEach(reveal => {
+                    const revealTop = reveal.getBoundingClientRect().top;
+
+                    if (revealTop < revealPoint) {
+                        reveal.classList.add('visible');
+                        reveal.classList.remove('hidden');
+                    } else {
+                        reveal.classList.remove('visible');
+                        reveal.classList.add('hidden');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', checkReveal);
+            checkReveal(); // Initial check
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
